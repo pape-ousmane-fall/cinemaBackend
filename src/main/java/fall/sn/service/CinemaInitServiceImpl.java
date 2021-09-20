@@ -151,7 +151,7 @@ private TicketRepository ticketRepository;
 			Film film=new Film();
 			film.setTitre(fil);
 			film.setDuree(durees[new Random().nextInt(durees.length)]);
-			film.setPhoto(fil.replaceAll("", ""));
+			film.setPhoto(fil.replaceAll("", "")+".jpg");
 			film.setCategorie(categorie.get(new Random().nextInt(categorie.size())));
 			filmRepository.save(film);
 		});
