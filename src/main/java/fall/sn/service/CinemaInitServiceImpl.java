@@ -77,9 +77,9 @@ private TicketRepository ticketRepository;
 			Stream.of("MegaRama","IMAX","FOUNOUN","CHAHRAZAD","DAOULIZ")
 			.forEach(nameCinema->{
 				Cinema cinema=new Cinema();
-//				cinema.setName(nameCinema);
 				cinema.setNombreSalles(3+(int)(Math.random()*7));
 				cinema.setVille(ville);
+				cinema.setName(nameCinema);
 				cinemaRepository.save(cinema);
 			});
 			
